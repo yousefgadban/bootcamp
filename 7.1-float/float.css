@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: blanchedalmond;
+    max-width: 400px;
+    margin: 15px auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.header {
+    background-color: blue;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    line-height: 50px;
+}
+
+
+
+.side {
+    background-color: red;
+    width: 25%;
+    height: 250px;
+    text-align: left;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    float: left;
+}
+
+.main {
+    background-color: green;
+    width: 73%;
+    height: 250px;
+    text-align: right;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    float: right;
+}
+
+
+
+.footer {
+    background-color: rgb(70, 30, 68);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    float: left;
+    
+}
+
+
+
