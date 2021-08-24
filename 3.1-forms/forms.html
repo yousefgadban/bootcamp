@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        div {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+
+        <div>
+            <h1>Create an account</h1>
+        </div>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+            <label for="age">Age</label><br>
+            <select name="age" id="age">
+                <option value="0-20" selected disabled>select age</option>
+                <option value="0-20">1 - 20</option>
+                <option value="0-20">21 - 40</option>
+                <option value="0-20">41 - 60</option>
+                <option value="0-20">61 - 80</option>
+                <option value="0-20">81 - 100</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Tell us about yourself:</label><br>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            
+        </div>
+
+        <div>
+            <input type="radio" name="terms" id="radio" value="radio"> I agree to the <span><a href="">terms</a></span> 
+        </div>
+
+        <div>
+            <button type="submit">Sign up</button>
+        </div>
+
+    </form>
+
+
+</body>
+</html>
