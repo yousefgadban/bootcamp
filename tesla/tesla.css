@@ -1,0 +1,852 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+    /* height: 100vh; */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+.firstPage {
+    width: 100wv;
+    height: 100vh;
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    scroll-snap-align: center; 
+}
+
+.header {
+    width: 100wv;
+    height: 60px;
+    /* background-color: blue; */
+
+    /* overflow: auto; */
+
+}
+
+.logo {
+    width: 160px;
+    height: 60px;
+    margin-left: 16px;
+    float: left;
+}
+
+.tds-icon {
+    width: 120px;
+    height: 30px;
+    margin: 15px 20px;
+}
+
+.models {
+    width: 600px;
+    height: 100%;
+    margin: auto;
+}
+
+.models ul {
+    list-style: none;
+}
+
+.models ul li {
+    float: left;
+}
+
+.models ul li a {
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    padding: 6px 15px;
+    text-align: center;
+    color: white;
+}
+
+.models ul li a:hover {
+    background-color: #8D939A;
+    border-radius: 12px; 
+}
+
+.right-menu {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    right: 32px;
+    top: 0;
+}
+
+.right-menu ul {
+    list-style: none;
+    float: right;
+}
+
+.right-menu ul li {
+    float: left;
+}
+
+.right-menu ul li a {
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-align: center;
+    color: white;
+}
+
+.right-menu ul li a:hover {
+    background-color: #8D939A;
+    border-radius: 8px; 
+}
+
+.model {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.speed {
+    width: 44%;
+    position: absolute;
+    bottom: 70px;
+    left: 28%;
+}
+
+.speed ul {
+    list-style: none;
+}
+
+.speed ul li {
+    float: left;
+    width: 25%;
+    
+    border: 1px solid transparent;
+}
+
+.speed ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.speed2-span {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* .order-now {
+    font-size: 10px;
+    color: tomato;
+    margin-top: 8px;
+} */
+
+.speed ul li button {
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 18px;
+    font-size: 14px; 
+    padding: 10px;
+    margin-top: 8px;
+    color: white;
+    text-align: center;
+    background: transparent;
+}
+
+.speed ul li button:hover {
+    color: black;
+    background: white;
+}
+
+.down-arrow {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 15px;
+    left : 48%
+}
+
+.tcl-speedometer {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tcl-speedometer__inner-circle {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -3px;
+    left: 3px;
+    opacity: .8;
+}
+
+.speedometer_line {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    transform: rotate(80deg);
+}
+
+.zero-to-hundred {
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    top: 0px;
+    left: 58px;
+    color: white;
+    font-size: 24px; 
+}
+
+.kmh {
+    height: 50px;
+    width: 100px;  
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    color: white;
+    font-size: 14px; 
+}
+
+
+.scroll-nav {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+
+.scroll-nav ul {
+    list-style: none;
+}
+
+.scroll-nav ul li {
+    border-radius: 1px;
+}
+
+.scroll-nav ul li a {
+    text-decoration: none;
+    display: block;
+    margin-top: 3px;
+    padding: 8px 16px;
+    text-align: left;
+    color: transparent;
+    font-size: 10px;
+}
+
+.scroll-nav ul li a:hover {
+    color: white;
+}
+
+.current { 
+    border-left: 3px solid white;
+}
+
+.notcurrent {
+    border-left: 1.5px solid gray;
+    margin-left: 1px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.header2 {
+    width: 200px;
+    height: 65px;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    z-index: 30;
+}
+
+.secondPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+    scroll-snap-align: center;
+}
+
+.secondPage .down-arrow2 {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 100vh;
+    right : 15px;
+    z-index: 30;
+}
+
+.left-section {
+    width: 30vw; 
+    height: 100vh;
+    padding: 50px 50px 50px 50px;
+    z-index: 20;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100vh;
+}
+
+.right-section {
+    width: 82vw;
+    height: 100vh;
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 10;
+    position: absolute;
+    left: 12vw;
+}
+
+.left-section-content{
+    /* position:fixed;
+    width:inherit;
+    max-width:inherit; */
+}
+
+.left-section-content .safety-desc {
+    padding-top: 10px;
+    line-height: 1.2rem;
+}
+
+
+.rating {
+    width: 100%;
+    height: 220px;
+    margin: 35px auto;
+    background-color: #e2e4e4;
+    border-radius: 24px;
+}
+
+.rating h3 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 18px;
+}
+
+.rating ul {
+    list-style: none;
+}
+
+
+
+.stars {
+    list-style: none;
+}
+
+.rating ul li {
+    float: left;
+    margin-top: 8px;
+}
+
+.rating ul li a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 6px 10px;
+    text-align: left;
+    color: #393c41;
+    font-size: 16px;
+}
+
+
+
+.star {
+    color: #393c41;
+    width: 23px;
+    margin-right: 10px;
+}
+
+.star3 {
+    margin-left: 33px;
+}
+
+.star4 {
+    margin-left: 17px;
+}
+
+.rating ul li a:hover {
+    background-color: #8D939A;
+    border-radius: 12px; 
+}
+
+
+.left-section .learn-more {
+    width: 100%;
+    height: 45px;
+    margin-top: 118px;
+    overflow: hidden;
+}
+
+.left-section .learn-more .circle {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #393c41;
+    border-radius: 50%;
+}
+
+.left-section .learn-more .circle .plus {
+    line-height: 35px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.left-section .learn-more .circle:hover {
+    color: white;
+    background-color: #393c41;
+}
+
+.left-section .learn-more .learn {
+    position: relative;
+    top: -45px;
+    left: 50px;
+    height: 45px;
+    text-align: center left;
+    line-height: 45px;
+    font-size: 14px;
+}
+
+.left-section .learn-more .order-now {
+    width: 140px;
+    height: 40px;
+    border: 3px solid #393c41;
+    border-radius: 20px;
+    font-size: 14px; 
+    padding: 10px;
+    margin-top: 8px;
+    color: #393c41;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    top: -95px;
+    left: 150px;
+}
+
+
+.left-section .learn-more .order-now:hover {
+    color: white;
+    background: #393c41;
+}
+
+.secondPage .scroll-nav {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150vh;
+    left: 20px;
+    z-index: 30;
+}
+
+.secondPage .scroll-nav ul {
+    list-style: none;
+}
+
+.secondPage .scroll-nav ul li {
+    border-radius: 1px;
+}
+
+.secondPage .scroll-nav ul li a {
+    text-decoration: none;
+    display: block;
+    margin-top: 3px;
+    padding: 8px 16px;
+    text-align: left;
+    color: transparent;
+    font-size: 10px;
+}
+
+.secondPage .scroll-nav ul li a:hover {
+    color: black;
+}
+
+.secondPage .current { 
+    border-left: 3px solid black;
+}
+
+.secondPage .notcurrent {
+    border-left: 1.5px solid gray;
+    margin-left: 1px;
+}
+
+.impact {
+    width: 160px;
+    height: 260px;
+    position: absolute;
+    left: 30vw;
+    top: 15vh;
+    z-index: 30;
+}
+
+.impact .circle-pointer {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.impact .arrow-pointer {
+    width: 3px;
+    height: 240px;
+    background-color: black;
+    position: absolute;
+    bottom: 8px;
+    left: 2.5px;
+}
+
+.impact p {
+    padding-left: 20px;
+}
+
+.rigid {
+    width: 160px;
+    height: 140px;
+    position: absolute;
+    left: 48vw;
+    top: 6vh;
+    z-index: 30;
+}
+
+.rigid .circle-pointer {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rigid .arrow-pointer {
+    width: 3px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    bottom: 8px;
+    left: 2.5px;
+}
+
+.rigid p {
+    padding-left: 20px;
+}
+
+.rollover {
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    left: 52vw;
+    top: 56vh;
+    z-index: 30;
+}
+
+.rollover .circle-pointer {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rollover .arrow-pointer {
+    width: 3px;
+    height: 160px;
+    background-color: black;
+    position: absolute;
+    top: 8px;
+    left: 2.5px;
+}
+
+.rollover p {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 5px;
+    left: 0;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.header3 {
+    width: 200px;
+    height: 65px;
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    z-index: 30;
+}
+
+.thirdPage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.thirdPage .top-section {
+    width: 100vw;
+    height: 65vh;
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.thirdPage .bottom-section {
+    width: 100vw;
+    height: 35vh;
+    position: absolute;
+    top: 265vh;
+    left: 0;
+}
+
+.thirdPage .bottom-section .container {
+    width: 70vw;
+    height: 25vh;
+    margin: auto;
+    margin-top: 7vh;
+}
+
+.thirdPage .bottom-section .container .performance {
+    font-size: 20px;
+}
+
+.thirdPage .bottom-section .container .quick {
+    width: 325px;
+    font-size: 28px;
+    color: #181b21;
+    text-align:justify;
+    letter-spacing: 2px;
+}
+
+
+
+
+.bottom-section .learn-more {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.bottom-section .learn-more .circle {
+    width: 45px;
+    height: 45px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.bottom-section .learn-more .circle .plus {
+    line-height: 35px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.bottom-section .learn-more .circle:hover {
+    color: white;
+    background-color: black;
+}
+
+.bottom-section .learn-more .learn {
+    position: relative;
+    top: -45px;
+    left: 50px;
+    height: 45px;
+    text-align: center left;
+    line-height: 45px;
+    font-size: 14px;
+}
+
+.bottom-section .learn-more .order-now {
+    width: 140px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 14px; 
+    padding: 10px;
+    margin-top: 8px;
+    color: black;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    top: -95px;
+    left: 150px;
+}
+
+
+.bottom-section .learn-more .order-now:hover {
+    color: white;
+    background: black;
+}
+
+
+.thirdPage .bottom-section .container .description {
+    width: 45vw;
+    height: 25vh;
+    position: absolute;
+    top: 7vh;
+    right: 15vw;
+}
+
+.thirdPage .bottom-section .container .description .desc-p {
+   margin-right: 50px;
+   line-height: 1.4rem;
+}
+
+
+
+.thirdPage .scroll-nav {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 250vh;
+    left: 20px;
+    z-index: 30;
+}
+
+.thirdPage .scroll-nav ul {
+    list-style: none;
+}
+
+.thirdPage .scroll-nav ul li {
+    border-radius: 1px;
+}
+
+.thirdPage .scroll-nav ul li a {
+    text-decoration: none;
+    display: block;
+    margin-top: 3px;
+    padding: 8px 16px;
+    text-align: left;
+    color: transparent;
+    font-size: 10px;
+}
+
+.thirdPage .scroll-nav ul li a:hover {
+    color: white;
+}
+
+.thirdPage .current { 
+    border-left: 3px solid white;
+}
+
+.thirdPage .notcurrent {
+    border-left: 1.5px solid gray;
+    margin-left: 1px;
+}
+
+
+
+
+.thirdPage .top-section .speed {
+    width: 64%;
+    position: relative;
+    top: 330px;
+    left: 18%;
+    z-index: 30;
+}
+
+.thirdPage .speed ul {
+    list-style: none;
+}
+
+.thirdPage .speed ul li {
+    float: left;
+    width: 33%;
+    border: 1px solid transparent;
+}
+
+.thirdPage .speed ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 1.2rem;
+}
+
+
+
+.thirdPage .speed ul li a .speed2-span {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+.thirdPage .down-arrow3 {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 200vh;
+    right : 15px;
+    z-index: 30;
+}
+
+.thirdPage .tcl-speedometer {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.thirdPage .tcl-speedometer__inner-circle {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -3px;
+    left: 3px;
+    opacity: .8;
+}
+
+.thirdPage .speedometer_line {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    transform: rotate(80deg);
+}
+
+.thirdPage .zero-to-hundred {
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    top: 0px;
+    left: 58px;
+    color: white;
+    font-size: 24px; 
+}
+
+.thirdPage .kmh {
+    position: absolute;
+    top: 40px;
+    left: -100px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 12px; 
+   line-height: 1.2rem;
+}

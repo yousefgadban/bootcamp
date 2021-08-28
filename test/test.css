@@ -1,0 +1,15 @@
+.body {
+    height: 2000px;
+}
+
+.header {
+    background-color: #2196f3;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    position: sticky;
+}
+
+.content {
+    height: 500px;
+}
