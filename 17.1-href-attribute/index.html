@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/17.1-href-attribute/index.css">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        p a:after {
+            color: red;
+            content: attr(href) 
+            /* 'www.appleseeds.org.il'; */
+        }
+
+        .outer-box {
+            width: 16vw;
+            height: 16vw;
+            background-color: red;
+            position: relative;
+        }
+
+        .inner-box:after {
+            content: '';
+            width: 8vw;
+            height: 16vw;
+            background-color: rgb(65, 225, 78);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        div.outer-box::after {
+            background-color: skyblue;
+        }
+
+        /* .inner-box:hover:: {
+            
+            background-color: royalblue;
+        } */
+
+        .border {
+            width: 26vw;
+            height: 26vw;
+            background-color: black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .border h1 {
+            color: white;
+        }
+
+        .border .border-top::before {
+            content: '';
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top: 2px solid red;
+            border-left: 2px solid red;
+        }
+
+        .border .border-top::after {
+            content: '';
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-top: 2px solid red;
+            border-right: 2px solid red;
+        }
+
+
+        .border .border-bottom::before {
+            content: '';
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+        }
+
+        .border .border-bottom::after {
+            content: '';
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-bottom: 2px solid red;
+            border-right: 2px solid red; 
+        }
+
+        .tooltip {
+            border: 1px solid black;
+            width: 50vw;
+            height: 50vh;
+            position: relative;
+        }
+
+        .mark::before {
+            content: 'asdfdsfasdfasdfasdfsd';
+            width: 12vw;
+            height: 5vh;
+            background-color: yellow;
+            position: absolute;
+            top: 10vh;
+            left: 10vw;
+            border-radius: 20px;
+            color: blue;
+        }
+
+        .mark::after {
+            content: '';
+            position: absolute;
+            top: 15vh;
+            left: 13vw;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <p>Please visit this website <a href="www.appleseeds.org.il"></a> for more information </p> 
+
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+
+    <br>
+
+    <div class="border">
+        <span class="border-top"></span>
+        <h1>Cool border</h1>
+        <span class="border-bottom"></span>
+    </div>
+
+    <br>
+
+    <div class="tooltip">
+        <span class="mark"></span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima fugiat dolorum ea optio a nesciunt quos exercitationem voluptas, officiis qui aliquam eligendi impedit autem dolore aut quaerat architecto commodi, molestias voluptates ab excepturi beatae quam pariatur temporibus. Iure sint ex vitae animi perspiciatis, reprehenderit eius minus suscipit, amet itaque atque nam aliquid temporibus facilis, illo error quia libero repudiandae et adipisci magni ea rerum voluptas dolor. Quasi et autem provident dolor itaque quod quis. Cupiditate enim molestiae, eum quia hic explicabo exercitationem excepturi repellendus nisi pariatur porro praesentium a, incidunt, fuga dolore nesciunt quidem fugiat alias repellat velit? Ratione cum ipsam asperiores doloribus accusantium accusamus. Maxime voluptatem earum explicabo iste delectus nisi laborum perspiciatis enim totam. Sed vero dolor molestias voluptate natus fugiat voluptatem, deleniti unde laudantium error inventore nihil? Reiciendis obcaecati voluptatibus quasi autem nisi officiis, accusantium fuga nihil facere, unde natus. Autem exercitationem assumenda temporibus repudiandae ad, ab commodi, architecto a repellat sit aspernatur vitae suscipit, eligendi nulla neque placeat tempore accusantium voluptates molestias sapiente est? Laboriosam provident quam minima deserunt sit quos sint, perferendis maiores ipsam praesentium dicta labore dignissimos voluptates quasi sunt voluptas reiciendis blanditiis illo animi. Corrupti impedit dolorem excepturi. Asperiores est sapiente velit provident autem illum quaerat, consequatur exercitationem dolorum? Repellat fugiat consectetur maxime perspiciatis reprehenderit distinctio. Eaque velit ipsum, cum dolor ipsam doloremque incidunt labore voluptates excepturi nihil error dolorum, accusantium nemo inventore itaque. Quaerat, odit animi magnam ullam illo consequatur, at reiciendis non perspiciatis nisi, ut similique assumenda asperiores ipsa. Eos inventore iusto mollitia distinctio, ex odio beatae. Dicta dolores delectus, facilis enim saepe commodi aperiam, eius architecto modi neque tempore praesentium similique. Repellat ullam cum quam, illo dolorem minus magnam totam doloribus quo maiores accusantium perspiciatis rem quidem ad dolore eum laborum, a aliquam sit debitis cumque voluptates! Laborum, sit! Recusandae?</p>
+    </div>
+
+</body>
+</html>
