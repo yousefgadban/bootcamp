@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color : #2196f3;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0px;
+    padding: 0 15px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 5px 5px;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.navbar li a:hover {
+    background-color: #0d8af0;
+    border-bottom: 1px solid white;
+}
+
+.navbar .logo {
+    font-weight: 800;
+    color: white;
+}
+
+.navbar .book-logo {
+    padding: 0 10px;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 15px auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.main-title {
+    font-family: 'Hina Mincho', serif;
+    color: var(--primary-color);
+    border: 1px solid black;
+}
+
+.side {
+    border: 1px solid black;
+    width: 30vw;
+    height: 250px;
+    float: left;
+    margin-top: 15px;
+}
+
+.main {
+    border: 1px solid black;
+    width: 65vw; 
+    height: 250px;
+    float: right;
+    margin-top: 15px; 
+}
+
+.about-me {
+    padding: 10px;
+}
+
+.favorites {
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.favorites > h3 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 32px;
+    margin: 15px;
+}
+
+.favorites-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.card {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.image {
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid black;
+}
+
+.card .container {
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+}
+
+
+.social-network-nav {
+    margin: 10px;
+    border: 1px solid black;
+    height: 60px;
+}
+
+.social-network-nav ul { 
+    list-style: none;
+}
+
+.social-network-nav  ul li {
+    float: left;
+}
+
+.social-network-nav  ul li a {
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 6px 15px;
+    text-align: left;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+ /* -------------------------------------------------- MEDIA QUERIES ------------------------------------------------ */
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+    
+    .side {
+        border: 1px solid black;
+        width: 95vw;
+        height: 250px;
+        margin-top: 15px;
+    }
+
+    .main {
+        width: 95vw;
+    }
+
+    .favorites-flex {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    .side {
+        display: block;
+        width: 30vw;
+    }
+
+    .main {
+        width: 65vw;
+    }
+}
+
+/* Normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+    .side {
+        display: block;
+        width: 30vw;
+    }
+
+    .main {
+        width: 65vw;
+    }
+}
+
+/* Widescreen */
+@media(min-width: 1201px) {
+
+}
+
+/* Landscape */
+@media(max-height: 500px) {
+
+
+}

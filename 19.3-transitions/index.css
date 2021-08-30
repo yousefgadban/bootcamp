@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 20vw;
+    height: 200px;
+    margin: 50px;
+}
+
+.btn {
+    border: 1px solid black;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.container .text {
+    color: black;
+}
+
+.translate-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.translate:hover .translate-anim {
+    animation: translate-anim 2s linear forwards;
+}
+
+.translate:hover .text {
+    animation: p-anim 2s linear forwards;
+}
+
+
+/* translate-y */
+
+.translate-y-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: red;
+    color: black;
+    overflow: hidden;
+}
+
+.translate-y:hover .translate-y-anim {
+    animation: translate-y-anim 2s linear forwards;
+}
+
+
+.scale-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    z-index: -10;
+    opacity: 0;
+}
+
+.scale:hover .scale-anim {
+    animation: scale-anim 2s linear forwards;
+}
+
+.scale:hover .text {
+    animation: scale-text-anim 2s linear forwards;
+}
+
+
+
+
+/* @keyframes */
+
+@keyframes translate-anim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+        color: white;
+    }
+}
+
+@keyframes p-anim {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes translate-y-anim {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes scale-anim {
+
+    100% {
+        opacity: 1;
+        background-color: black;
+    }
+}
+
+@keyframes scale-text-anim {
+    1% {
+        font-size: 50px;
+        color: white;
+    }
+
+    100% {
+        font-size: 16px;
+        color: white;
+    }
+}
+
+

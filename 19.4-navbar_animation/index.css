@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 90vw;
+    height: 80px;
+    border: 1px solid black;
+    background-color: #2196f3;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.item {
+    width: 25vw;
+
+}
+
+.item-1 {
+   
+}
+
+.item-2 {
+    flex-grow: 1;
+}
+
+.item-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* .menu-item:hover {
+    background-color: yellow;
+} */
+
+.menu-item {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+} 
+
+.top {
+    top: 0;
+    left: 0;
+}
+
+.bottom {
+    bottom: 0;
+    right: 0;
+}
+
+.menu h4 {
+    padding: 10px;
+}
+
+
+
+
+.menu-item:hover .line {
+    animation: line-anim 2s linear forwards;
+}
+
+@keyframes line-anim {
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
+/* -------------------------------------------------- MEDIA QUERIES ------------------------------------------------ */
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item-1 {
+        width: 90vw;
+    }
+
+    .item-2 {
+        display: none;
+    }
+
+    .item-3 {
+        width: 90vw;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    
+    .container {
+        flex-direction: row;
+    }
+
+    .item-1 {
+        width: 25vw;
+    }
+
+    .item-2 {
+        display: block;
+    }
+
+    .item-3 {
+        width: 25vw;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+}
+
+/* Normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+
+}
+
+/* Widescreen */
+@media(min-width: 1201px) {
+
+}
+
+/* Landscape */
+@media(max-height: 500px) {
+
+
+}
+
