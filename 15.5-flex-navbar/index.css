@@ -22,16 +22,18 @@
 }
 
 .item-1 {
-   
+   background-color: blue;
 }
 
 .item-2 {
     flex-grow: 1;
+    background-color: blueviolet;
 }
 
 .item-3 {
     display: flex;
     flex-direction: row;
+    background-color: chartreuse;
 }
 
 .menu {
