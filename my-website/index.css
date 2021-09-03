@@ -31,7 +31,7 @@ a {
 }
 
 h1, h2 {
-
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -47,15 +47,15 @@ img {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #333;
     color: #fff;
     opacity: 0.8;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     position: fixed;
     top: 0px;
-    /* padding: 0 10px; */
+    padding: 0 30px;
     transition: 0.5s;
 }
 
@@ -64,10 +64,9 @@ img {
 }
 
 .navbar a {
-    color: #fff; 
-    padding: 10px 15px;
+    color: #fff;
+    padding: 10px 20px;
     margin: 0 5px;
-    /* font-size: 0.5rem; */
 }
 
 .navbar a:hover {
@@ -79,17 +78,15 @@ img {
 }
 
 .navbar .logo {
-    font-weight: 400;
+    font-weight: 800;
 }
 
 /* Header */
 .hero {
     background: url('../images/desktop.jpeg') no-repeat center center/cover;
     height: 100vh;
-    width: 100vw;
     position: relative;
     color: #fff;
-    
 }
 
 .hero .content {
@@ -135,6 +132,7 @@ img {
 
 .skills {
     width: 100vw;
+    height: 60vh;
     background-color: #f2f2f2;
 }
 
@@ -209,8 +207,9 @@ img {
 
 .projects {
     width: 100vw;
-
-    background-color: #f2f2f2
+    height: 70vh;
+    background-color: #f2f2f2;
+    display: none;
 }
 
 .projects .title {
@@ -219,7 +218,6 @@ img {
     width: 100%;
     align-items: center;
     padding-top: 75px;
-   
 }
 
 .projects .title h1 {
@@ -227,7 +225,6 @@ img {
     font-size: 3rem;
     padding-bottom: 20px;
     letter-spacing: 3px;
-    
 }
 
 .projects .title .bottom-line {
@@ -243,7 +240,6 @@ img {
     gap: 15px;
     width: 100%;
     padding: 40px 40px;
-    /* display: none; */
 }
 
 .projects .projects-grid .project {
@@ -251,6 +247,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
 }
 
 .projects .projects-grid .project img {
@@ -260,14 +257,10 @@ img {
     margin-bottom: 20px;
 }
 
-.projects .projects-grid .project h3 {
-    color: var(--primary-color);
-}
-
 .projects .projects-grid .project p {
     width: 100%;
     padding: 20px;
-    text-align: center;
+    color: blue;
 }
 
 
@@ -276,12 +269,12 @@ img {
 
 .contactus {
     width: 100vw;
- 
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    display: none;
 }
 
 .contactus .title {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -323,7 +316,7 @@ img {
 
 .contactus .contactus-grid .contact-info h2 {
     padding: 30px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--primary-color);
 }
 
@@ -350,7 +343,7 @@ img {
 }
 
 .footer a:hover {
-    color: var(--primary-color)
+    color: #28a745;
 }
 
 .footer .social > * {
@@ -364,7 +357,7 @@ img {
 /* Mobile */
 @media(max-width: 768px) {
     .navbar {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .navbar a {
@@ -388,18 +381,5 @@ img {
 
     .team img {
         width: 70%;
-    }
-
-    .projects .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .contactus .contactus-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skills .skills-grid {
-        grid-template-columns: 1fr;
     }
 }
