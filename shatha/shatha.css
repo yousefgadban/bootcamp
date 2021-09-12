@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70vw;
+    height: 70vh;
+    margin: 10vh auto;
+
+    background-color: black;
+    background: url('../images/shatha1.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    /* background-image: linear-gradient(to right, red , yellow); */
+}
+
+
+
+.container img {
+    width: 400px;
+    object-fit: cover;
+    z-index: 20;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.container p {
+    background: -webkit-linear-gradient(#d77f24, #fdbc44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .cosmitics {
+    position: absolute;
+    font-size: 36px;
+    top: 202px;
+    left: 320px;
+}
+
+
+.container .luxury {
+    position: absolute;
+    font-size: 36px;
+    top: 240px;
+    left: 50px;
+    word-spacing: 8px;
+    letter-spacing: 5px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.container * {
+    z-index: 10;
+}
+
+.container .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    position: absolute;
+    top: 410px;
+    left: 0px;
+    width: 100%;
+}
+
+.container .social .soc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .social .soc h3 {
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+.container .social .fab,
+.container .social .fas {
+  padding: 0px;
+  
+  background: -webkit-linear-gradient(#d77f24, #fdbc44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

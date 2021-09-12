@@ -2,8 +2,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr); 
     grid-template-rows: repeat(8, 1fr); 
-    grid-gap: 10px;
-
+    grid-gap: 0;
     width: 70vw;
 }
 

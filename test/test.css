@@ -89,7 +89,6 @@ img {
     width: 100vw;
     position: relative;
     color: #fff;
-    
 }
 
 .hero .content {
@@ -306,12 +305,13 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding: 40px 0px;
+    padding-top: 40px;
 }
 
 .contactus .contactus-grid img {
     background: url('../images/business-card.jpeg') no-repeat center center/cover;
     height: 60vh;
+    /* width: 100%; */
 }
 
 .contactus .contactus-grid .contact-info {
